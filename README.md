@@ -48,4 +48,5 @@ See additional resources:
 # ?monthly_median
 ```
 
-or visit the pkgdown site: 👉 <https://vivianng24.github.io/nitratoR/>
+or visit the pkgdown site: 👉
+<https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-vivianng243/>
