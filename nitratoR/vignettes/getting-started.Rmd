@@ -1,0 +1,58 @@
+---
+title: "Getting Started with nitratoR"
+author: "Ngoc Khanh Van Nguyen"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with nitratoR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(nitratoR)
+```
+
+## Overview
+
+The nitratoR package provides tidy monthly data from three NEON stream sites
+(Arikaree, Caribou, and Lewis Run) during 12 months of 2023, including two variables about water quality, which are surface water temperature and nitrate level.
+It includes:
+
+- `nitrate_tidy`: monthly nitrate concentrations (µmol/L)
+
+- `temp_tidy`: monthly surface-water temperature (°C)
+
+- a helper function `monthly_median()`
+
+- a Shiny dashboard (`launch_app()`) for interactive exploration
+
+## Load the datasets
+
+```{r}
+data(nitrate_tidy)
+data(temp_tidy)
+```
+
+## Quick function to get a single-site figure of nitrate level or water temperature
+
+The function returns the median nitrate concentration for a given site and month.
+
+```{r}
+monthly_median(nitrate_tidy, "LEWI", "Jan")
+```
+
+## Launch the interactive app
+
+You can visually explore both datasets interactively using the built-in Shiny dashboard:
+
+```{r launch-app, eval=FALSE}
+launch_app()
+```
+
+This app lets you choose datasets and sites, view boxplots, and explore patterns.
+

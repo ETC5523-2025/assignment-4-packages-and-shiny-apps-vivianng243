@@ -1,0 +1,40 @@
+Package: nitratoR
+Type: Package
+Title: The relationship between Nitrate and Water temperature
+Version: 0.1.0
+Authors@R: 
+    person(
+        given = "Ngoc Khanh Van",
+        family = "Nguyen",
+        email = "nngu0207@student.monash.edu",
+        role = c("aut", "cre")
+    )
+Description: 
+    The nitratoR package provides cleaned and tidy datasets of monthly water quality
+    data (nitrate and surface water temperature) from three NEON stream sites 
+    (Arikaree, Caribou, and Lewis Run) for 2023. It includes functions for quick 
+    monthly summaries, and an interactive Shiny dashboard for exploring patterns 
+    across sites and months. This package is designed as a learning project for 
+    building, documenting, and deploying R packages with shiny apps.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 4.3.0)
+Imports: 
+    dplyr,
+    tidyr,
+    ggplot2,
+    shiny,
+    plotly,
+    tibble,
+    forcats,
+    rlang
+Suggests: 
+    knitr,
+    rmarkdown,
+    pkgdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
