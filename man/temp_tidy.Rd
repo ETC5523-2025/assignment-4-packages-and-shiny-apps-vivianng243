@@ -3,7 +3,7 @@
 \docType{data}
 \name{temp_tidy}
 \alias{temp_tidy}
-\title{Monthly nitrate by site (2023)}
+\title{Monthly surface water temperature by site (2023)}
 \format{
 A tibble with columns:
 \describe{

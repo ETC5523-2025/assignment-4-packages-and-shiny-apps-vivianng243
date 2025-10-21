@@ -1,4 +1,4 @@
-#' Monthly nitrate by site (2023)
+#' Monthly surface water temperature by site (2023)
 #'
 #' The measurements of Surface water temperature, available as thirty-minute averages, measured by a platinum resistance thermometer at the sensor location are labelled by site and month for three NEON streams.
 #' Values are means from the NEON WAQ product; months are ordered Jan–Dec.

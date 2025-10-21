@@ -34,7 +34,7 @@ You can install the development version from GitHub:
 
 ``` r
 # install.packages("remotes")
-# remotes::install_github("vivianng24/nitratoR")
+# remotes::install_github("etc5523-2025/assignment-4-packages-and-shiny-apps-vivianng243")
 ```
 
 ## 🌐 Learn more
